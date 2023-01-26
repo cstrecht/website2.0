@@ -9,7 +9,7 @@ const Navbar = () => {
           <div class="flex items-center">
             <img src={avatar2} class="mr-3 h-14" alt="My Logo" />
             <span class="self-center text-xl font-semibold whitespace-nowrap">
-              Carolina Strecht
+              /cstrecht
             </span>
           </div>
           <div class="block w-auto">

@@ -16,15 +16,30 @@ const Intro = () => {
             <Typed strings={["I'm a front-end developer"]} typeSpeed={70} />
           </div>
           <div className="socials-container">
-            <a className="group" href="https://github.com/cstrecht">
+            <a
+              className="group"
+              href="https://github.com/cstrecht"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={github} alt="Github" className="social-icon" />
               <div class="github-tooltip">Github</div>
             </a>
-            <a className="group" href="https://www.linkedin.com/in/cstrecht/">
+            <a
+              className="group"
+              href="https://www.linkedin.com/in/cstrecht/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={linkedin} alt="Linkedin" className="social-icon" />
               <div class="linkedin-tooltip">LinkedIn</div>
             </a>
-            <a className="group" href="https://twitter.com/cstrechtt">
+            <a
+              className="group"
+              href="https://twitter.com/cstrechtt"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={twitter} alt="Twitter" className="social-icon" />
               <div class="twitter-tooltip">Twitter</div>
             </a>

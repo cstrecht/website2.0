@@ -45,7 +45,9 @@ const Intro = () => {
             </a>
           </div>
         </div>
-        <img src={avatar1} className="h-96" alt="Carolina's logo" />
+        <div className="my-auto">
+          <img src={avatar1} className="h-96" alt="Carolina's logo" />
+        </div>
       </div>
     </section>
   );

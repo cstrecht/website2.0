@@ -10,7 +10,7 @@
 
   /* Introduction Page */
   .intro {
-    @apply flex justify-around font-dmsans p-20 h-fit;
+    @apply flex justify-around font-dmsans p-20 h-screen;
   }
   .socials-container {
     @apply flex space-x-20 mt-8 relative;
@@ -23,11 +23,40 @@
      opacity-0 top-3 left-4 mt-4 mx-auto border-2 border-white;
   }
   .linkedin-tooltip {
-    @apply group-hover:opacity-100 transition-opacity bg-linkedin-blue px-1 text-sm text-white rounded-md absolute
+    @apply group-hover:opacity-100 transition-opacity bg-primary px-1 text-sm text-white rounded-md absolute
      opacity-0 top-3 left-24 mt-4 mx-auto border-2 border-white;
   }
   .twitter-tooltip {
-    @apply group-hover:opacity-100 transition-opacity bg-twitter-blue px-1 text-sm text-white rounded-md absolute
+    @apply group-hover:opacity-100 transition-opacity bg-primary px-1 text-sm text-white rounded-md absolute
      opacity-0 top-3 left-44 mt-4 mx-auto border-2 border-white;
   }
+}
+
+@keyframes smoothscroll1 {
+  from,
+  to {
+    scroll-behavior: smooth;
+  }
+}
+
+@keyframes smoothscroll2 {
+  from,
+  to {
+    scroll-behavior: smooth;
+  }
+}
+
+html {
+  animation: smoothscroll1 1s;
+}
+
+html:focus-within {
+  animation-name: smoothscroll2;
+  scroll-behavior: smooth;
+}
+
+/* scroll */
+
+#projects {
+  @apply bg-linkedin-blue grid place-items-center content-center min-h-screen;
 }

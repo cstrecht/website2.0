@@ -58,5 +58,5 @@ html:focus-within {
 /* scroll */
 
 #projects {
-  @apply bg-linkedin-blue grid place-items-center content-center min-h-screen;
+  @apply flex justify-center min-h-screen font-dmsans;
 }

@@ -5,8 +5,10 @@ module.exports = {
     colors: {
       white: "#ffffff",
       primary: "#c4b5fd",
-      "linkedin-blue": "#0072b1",
-      "twitter-blue": "#00acee",
+      neutral: "#171717",
+      "pastel-pink": "#d4afb9",
+      "pastel-blue": "#abdee6",
+      "pastel-yellow": "#f6eac2",
     },
     extend: {
       fontFamily: {

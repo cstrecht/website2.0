@@ -23,7 +23,7 @@ const Intro = () => {
               rel="noreferrer"
             >
               <img src={github} alt="Github" className="social-icon" />
-              <div class="github-tooltip">Github</div>
+              <div className="github-tooltip">Github</div>
             </a>
             <a
               className="group"
@@ -32,7 +32,7 @@ const Intro = () => {
               rel="noreferrer"
             >
               <img src={linkedin} alt="Linkedin" className="social-icon" />
-              <div class="linkedin-tooltip">LinkedIn</div>
+              <div className="linkedin-tooltip">LinkedIn</div>
             </a>
             <a
               className="group"
@@ -41,7 +41,7 @@ const Intro = () => {
               rel="noreferrer"
             >
               <img src={twitter} alt="Twitter" className="social-icon" />
-              <div class="twitter-tooltip">Twitter</div>
+              <div className="twitter-tooltip">Twitter</div>
             </a>
           </div>
         </div>

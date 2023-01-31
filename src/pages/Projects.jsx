@@ -10,31 +10,27 @@ const Projects = () => {
           {projects.map((project, id) => {
             return (
               <div
-                className="flex mb-32"
+                className="project-container"
                 key={project.id}
                 data-aos={project.scrollFade}
               >
                 <div className={project.background}>
-                  <div className="absolute bottom-0 right-0">
+                  <div className="project-view">
                     <img
-                      className="object-cover rounded-md ml-3"
+                      className="project-img"
                       src={project.image}
                       alt={project.alt}
                     />
                   </div>
                 </div>
-                <div className="mx-6 w-96">
+                <div className="project-data">
                   <h1 className="mb-6 text-2xl">{project.name}</h1>
                   <p className="text-xs mb-6">{project.description}</p>
                   <a href={project.demo} target="_blank" rel="noreferrer">
-                    <button className="bg-neutral py-1 px-2 mr-3 text-sm text-white">
-                      Try demo
-                    </button>
+                    <button className="btn-dark">Try demo</button>
                   </a>
                   <a href={project.repo} target="_blank" rel="noreferrer">
-                    <button className="bg-white py-1 px-2 m-3 text-sm text-neutral border border-neutral">
-                      View code
-                    </button>
+                    <button className="btn-light">View code</button>
                   </a>
                 </div>
               </div>

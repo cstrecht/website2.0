@@ -1,8 +1,8 @@
-import projectpokedex from "./assets/projectpokedex.png";
-import projectrickandmorty from "./assets/projectrickandmorty.png";
-import projectmakeup from "./assets/projectmakeup.png";
-import projectcheckout from "./assets/projectcheckout.png";
-import projectwebsite from "./assets/projectwebsite.png";
+import projectpokedex from "./assets/projects/projectpokedex.png";
+import projectrickandmorty from "./assets/projects/projectrickandmorty.png";
+import projectmakeup from "./assets/projects/projectmakeup.png";
+import projectcheckout from "./assets/projects/projectcheckout.png";
+import projectwebsite from "./assets/projects/projectwebsite.png";
 
 const projects = [
   {

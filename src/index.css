@@ -3,24 +3,9 @@
 @tailwind utilities;
 
 @layer components {
-  @keyframes smoothscroll1 {
-    from,
-    to {
-      scroll-behavior: smooth;
-    }
-  }
-
-  @keyframes smoothscroll2 {
-    from,
-    to {
-      scroll-behavior: smooth;
-    }
-  }
-
   html {
     animation: smoothscroll1 1s;
   }
-
   html:focus-within {
     animation-name: smoothscroll2;
     scroll-behavior: smooth;
@@ -28,7 +13,28 @@
 
   /* Navbar */
   .nav-link {
-    @apply block my-2 ml-3 mr-4 transition-all ease-in-out text-sm hover:text-primary;
+    @apply block my-2 ml-3 mr-4 transition-all ease-in-out text-sm md:text-base xl:text-lg 2xl:text-2xl hover:text-primary;
+  }
+  .nav-container {
+    @apply w-full px-14 py-4 font-dmsans absolute;
+  }
+  .nav-flex {
+    @apply container flex flex-wrap items-center justify-center md:justify-between mx-auto;
+  }
+  .nav-logo {
+    @apply flex items-center;
+  }
+  .nav-img {
+    @apply mr-3 h-10 sm:h-14;
+  }
+  .nav-username {
+    @apply self-center text-lg lg:text-2xl 2xl:text-3xl font-semibold whitespace-nowrap;
+  }
+  .nav-sections {
+    @apply block w-auto;
+  }
+  .nav-list {
+    @apply flex p-4 flex-row space-x-2 sm:space-x-8 text-base font-medium;
   }
 
   /* Introduction Section */

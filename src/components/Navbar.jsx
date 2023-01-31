@@ -4,18 +4,16 @@ import avatar2 from "../assets/avatar2.svg";
 const Navbar = () => {
   return (
     <>
-      <nav className="bg-transparent w-full px-14  py-4 font-dmsans absolute">
-        <div className="container flex flex-wrap items-center justify-between mx-auto">
-          <div className="flex items-center">
-            <img src={avatar2} className="mr-3 h-14" alt="My Logo" />
-            <span className="self-center text-xl font-semibold whitespace-nowrap">
-              /cstrecht
-            </span>
+      <nav className="nav-container">
+        <div className="nav-flex">
+          <div className="nav-logo">
+            <img src={avatar2} className="nav-img" alt="Carolina's Logo" />
+            <span className="nav-username">/cstrecht</span>
           </div>
-          <div className="block w-auto">
-            <ul className="flex p-4 flex-row space-x-8 text-base font-medium">
+          <div className="nav-sections">
+            <ul className="nav-list">
               <li>
-                <a href="#projects" className="nav-link" aria-current="page">
+                <a href="#projects" className="nav-link">
                   Projects
                 </a>
               </li>

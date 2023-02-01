@@ -1,5 +1,5 @@
 import React from "react";
-import avatar2 from "../assets/avatar2.svg";
+import avatarRight from "../assets/avatarRight.svg";
 
 const Navbar = () => {
   return (
@@ -7,7 +7,7 @@ const Navbar = () => {
       <nav className="nav-container">
         <div className="nav-flex">
           <div className="nav-logo">
-            <img src={avatar2} className="nav-img" alt="Carolina's Logo" />
+            <img src={avatarRight} className="nav-img" alt="Carolina's Logo" />
             <span className="nav-username">/cstrecht</span>
           </div>
           <div className="nav-sections">

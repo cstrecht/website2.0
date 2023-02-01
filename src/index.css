@@ -36,10 +36,20 @@
   .nav-list {
     @apply flex p-4 flex-row space-x-4 sm:space-x-8 text-base font-medium;
   }
+  /* - */
 
   /* Introduction Section */
-  .intro {
+  .intro-container {
     @apply sm:flex justify-around font-dmsans p-5 sm:p-20 h-screen;
+  }
+  .intro-text {
+    @apply my-auto text-2xl text-center sm:text-left md:text-4xl 2xl:text-5xl;
+  }
+  .intro-welcome {
+    @apply pb-3 2xl:pb-6;
+  }
+  .intro-socials {
+    @apply flex justify-center sm:justify-start;
   }
   .socials-container {
     @apply flex sm:relative space-x-10 sm:space-x-20 mt-8 2xl:mt-12 2xl:space-x-24;
@@ -59,16 +69,20 @@
     @apply hidden sm:flex group-hover:opacity-100 transition-opacity bg-primary px-1 text-sm 2xl:text-base text-white rounded-md absolute
      opacity-0 top-3 2xl:top-6 left-44 2xl:left-52 mt-4 mx-auto border-2 border-white;
   }
+  .intro-img {
+    @apply my-auto flex justify-center;
+  }
+  .avatar {
+    @apply h-72 mt-10 sm:mt-0 sm:h-80 md:h-96 2xl:h-[484px];
+  }
+  /* - */
 
-  /* Project Section */
+  /* Projects Section */
   #projects {
     @apply flex justify-center min-h-screen font-dmsans;
   }
-  .btn-dark {
-    @apply bg-neutral py-1 px-2 mr-3 text-sm text-white;
-  }
-  .btn-light {
-    @apply bg-white py-1 px-2 m-3 text-sm text-neutral border border-neutral;
+  .projects-container {
+    @apply flex flex-col;
   }
   .project-container {
     @apply flex mb-32;
@@ -79,7 +93,37 @@
   .project-img {
     @apply object-cover rounded-md ml-3;
   }
-  .project-data {
+  .project-info {
     @apply mx-6 w-96;
+  }
+  .project-name {
+    @apply mb-6 text-2xl;
+  }
+  .project-desc {
+    @apply text-xs mb-6;
+  }
+  /* - */
+
+  /* About Me Section */
+  /* css here */
+  /* - */
+
+  /* Contact Section */
+  /* css here */
+  /* - */
+
+  /* Footer */
+  /* css here */
+  /* - */
+
+  /* Global Styles */
+  .section-title {
+    @apply text-4xl text-center mt-4 mb-16;
+  }
+  .btn-dark {
+    @apply bg-neutral py-1 px-2 mr-3 text-sm text-white;
+  }
+  .btn-light {
+    @apply bg-white py-1 px-2 m-3 text-sm text-neutral border border-neutral;
   }
 }

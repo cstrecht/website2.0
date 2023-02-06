@@ -105,7 +105,37 @@
   /* - */
 
   /* About Me Section */
-  /* css here */
+  .custom-shape-divider-top-1675433410 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    line-height: 0;
+    background-color: #ddedea;
+    z-index: -1;
+  }
+
+  .custom-shape-divider-top-1675433410 svg {
+    position: relative;
+    display: block;
+    width: calc(110% + 1.3px);
+    height: 155px;
+  }
+
+  .custom-shape-divider-top-1675433410 .shape-fill {
+    fill: #ffffff;
+  }
+
+  /** For mobile devices **/
+  @media (max-width: 767px) {
+    .custom-shape-divider-top-1675433410 svg {
+      width: calc(104% + 1.3px);
+      height: 96px;
+    }
+  }
+
   /* - */
 
   /* Contact Section */

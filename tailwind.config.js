@@ -6,6 +6,7 @@ module.exports = {
       white: "#ffffff",
       primary: "#c4b5fd",
       neutral: "#171717",
+      violet: "#d472e9",
       "pastel-pink": "#d4afb9",
       "pastel-blue": "#daeaf6",
       "pastel-yellow": "#f6eac2",

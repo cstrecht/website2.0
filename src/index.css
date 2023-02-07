@@ -101,7 +101,7 @@
   /* - */
 
   /* About Me Section */
-  .custom-shape-divider-top-1675433410 {
+  .about-top-wave {
     position: absolute;
     top: 0;
     left: 0;
@@ -113,26 +113,26 @@
     z-index: -1;
   }
 
-  .custom-shape-divider-top-1675433410 svg {
+  .about-top-wave svg {
     position: relative;
     display: block;
     width: calc(110% + 1.3px);
     height: 135px;
   }
 
-  .custom-shape-divider-top-1675433410 .shape-fill {
+  .about-top-wave .shape-fill {
     fill: #ffffff;
   }
 
   /** For mobile devices **/
   @media (max-width: 767px) {
-    .custom-shape-divider-top-1675433410 svg {
+    .about-top-wave svg {
       width: calc(104% + 1.3px);
       height: 96px;
     }
   }
 
-  .custom-shape-divider-bottom-1675781686 {
+  .about-bottom-wave {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -143,7 +143,7 @@
     z-index: -1;
   }
 
-  .custom-shape-divider-bottom-1675781686 svg {
+  .about-bottom-wave svg {
     position: relative;
     display: block;
     width: calc(223% + 1.3px);
@@ -151,16 +151,37 @@
     transform: rotateY(180deg);
   }
 
-  .custom-shape-divider-bottom-1675781686 .shape-fill {
+  .about-bottom-wave .shape-fill {
     fill: #ffffff;
   }
 
   /** For mobile devices **/
   @media (max-width: 767px) {
-    .custom-shape-divider-bottom-1675781686 svg {
+    .about-bottom-wave svg {
       width: calc(104% + 1.3px);
       height: 173px;
     }
+  }
+  .about-section {
+    @apply min-h-screen font-dmsans relative;
+  }
+  .about-description {
+    @apply mx-40 text-center text-lg my-2;
+  }
+  .about-container {
+    @apply flex justify-center;
+  }
+  .about-card {
+    @apply bg-white max-w-sm rounded-t-full shadow m-3;
+  }
+  .card-title {
+    @apply text-base font-semibold tracking-tight text-violet;
+  }
+  .card-data {
+    @apply text-base font-bold text-neutral;
+  }
+  .card-image {
+    @apply p-4 h-72 m-auto rounded-t-lg;
   }
 
   /* - */

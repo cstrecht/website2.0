@@ -4,10 +4,6 @@
 
 @layer components {
   html {
-    animation: smoothscroll1 1s;
-  }
-  html:focus-within {
-    animation-name: smoothscroll2;
     scroll-behavior: smooth;
   }
 
@@ -121,7 +117,7 @@
     position: relative;
     display: block;
     width: calc(110% + 1.3px);
-    height: 155px;
+    height: 135px;
   }
 
   .custom-shape-divider-top-1675433410 .shape-fill {
@@ -151,7 +147,7 @@
     position: relative;
     display: block;
     width: calc(223% + 1.3px);
-    height: 162px;
+    height: 132px;
     transform: rotateY(180deg);
   }
 
@@ -170,7 +166,36 @@
   /* - */
 
   /* Contact Section */
-  /* css here */
+  .custom-shape-divider-top-1675799209 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1;
+    background-color: #ddedea;
+  }
+
+  .custom-shape-divider-top-1675799209 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 155px;
+  }
+
+  .custom-shape-divider-top-1675799209 .shape-fill {
+    fill: #ffffff;
+  }
+
+  /** For mobile devices **/
+  @media (max-width: 767px) {
+    .custom-shape-divider-top-1675799209 svg {
+      width: calc(300% + 1.3px);
+      height: 101px;
+    }
+  }
+
   /* - */
 
   /* Footer */

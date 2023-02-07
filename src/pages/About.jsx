@@ -23,7 +23,10 @@ const About = () => {
           usability are essential to build meaningful products.
         </p>
         <div className="flex justify-center">
-          <div class=" bg-white max-w-sm rounded-t-full shadow m-3">
+          <div
+            data-aos="fade-up"
+            class=" bg-white max-w-sm rounded-t-full shadow m-3"
+          >
             <img
               className="p-4 h-72 m-auto rounded-t-lg"
               src="https://illustrations.popsy.co/fuchsia/work-from-home.svg"
@@ -44,7 +47,10 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div class=" bg-white max-w-sm rounded-t-full shadow m-3">
+          <div
+            data-aos="fade-up"
+            class=" bg-white max-w-sm rounded-t-full shadow m-3"
+          >
             <img
               className="p-4 h-72 m-auto rounded-t-lg"
               src="https://illustrations.popsy.co/fuchsia/product-launch.svg"
@@ -57,13 +63,16 @@ const About = () => {
               </h5>
 
               <div class="">
-                <span class="text-lg font-bold text-neutral">
+                <span class="text-base font-bold text-neutral">
                   React JS • Typescript • Next JS • React Query • REST APIs
                 </span>
               </div>
             </div>
           </div>
-          <div class="bg-white max-w-sm rounded-t-full shadow m-3">
+          <div
+            data-aos="fade-up"
+            class="bg-white max-w-sm rounded-t-full shadow m-3"
+          >
             <img
               className="p-4 h-72 m-auto rounded-t-lg"
               src="https://illustrations.popsy.co/fuchsia/flower.svg"
@@ -76,9 +85,9 @@ const About = () => {
               </h5>
 
               <div class="">
-                <span class="text-lg font-bold text-neutral">
-                  Knitting • Play music • Bouldering • Wine or beer tastings •
-                  Travel the world
+                <span class="text-base font-bold text-neutral">
+                  Knitting • Play music • Bouldering • Travel • Wine/beer
+                  tastings
                 </span>
               </div>
             </div>

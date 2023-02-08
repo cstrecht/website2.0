@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 @layer components {
-  html {
-    scroll-behavior: smooth;
+  html,
+  body {
+    @apply scroll-smooth font-dmsans;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   /* Navbar */
@@ -12,7 +15,7 @@
     @apply block m-1 sm:my-2 sm:ml-3 sm:mr-4 transition-all ease-in-out text-sm md:text-base xl:text-lg 2xl:text-2xl hover:text-primary;
   }
   .nav-container {
-    @apply w-full px-14 pt-6 pb-8 sm:py-4 font-dmsans sm:absolute;
+    @apply w-full px-14 pt-6 pb-8 sm:py-4  sm:absolute;
   }
   .nav-flex {
     @apply container flex flex-wrap items-center justify-center md:justify-between mx-auto;
@@ -36,10 +39,10 @@
 
   /* Introduction Section */
   .intro-container {
-    @apply sm:flex justify-around font-dmsans p-5 sm:p-20 h-screen;
+    @apply sm:flex justify-around p-5 pt-0 pb-24 sm:p-24 md:h-screen;
   }
   .intro-text {
-    @apply my-auto text-2xl text-center sm:text-left md:text-4xl 2xl:text-5xl;
+    @apply my-auto text-2xl text-center sm:text-left md:text-4xl 2xl:text-[60px];
   }
   .intro-welcome {
     @apply pb-3 2xl:pb-6;
@@ -69,34 +72,34 @@
     @apply my-auto flex justify-center;
   }
   .avatar {
-    @apply h-72 mt-10 sm:mt-0 sm:h-80 md:h-96 2xl:h-[484px];
+    @apply h-72 mt-10 sm:mt-0 sm:h-56 md:h-96 2xl:h-[550px];
   }
   /* - */
 
   /* Projects Section */
   #projects {
-    @apply flex justify-center min-h-screen font-dmsans;
+    @apply flex justify-center min-h-screen;
   }
   .projects-container {
     @apply flex flex-col;
   }
   .project-container {
-    @apply flex mb-32;
+    @apply flex flex-col mb-14 md:mb-32 md:flex-row md:pr-0;
   }
   .project-view {
     @apply absolute bottom-0 right-0;
   }
   .project-img {
-    @apply object-cover rounded-md ml-3;
+    @apply object-cover rounded-md md:ml-3;
   }
   .project-info {
-    @apply mx-6 w-96;
+    @apply md:w-80 text-center lg:mx-6 lg:w-96;
   }
   .project-name {
-    @apply mb-6 text-2xl;
+    @apply md:text-left mt-6 md:mt-0 md:mb-6 text-2xl;
   }
   .project-desc {
-    @apply text-xs mb-6;
+    @apply mx-8 my-4 sm:my-6 md:my-0 md:text-left md:mx-0 text-xs sm:text-sm lg:my-5 md:mb-6;
   }
   /* - */
 
@@ -163,7 +166,7 @@
     }
   }
   .about-section {
-    @apply min-h-screen font-dmsans relative;
+    @apply min-h-screen  relative;
   }
   .about-description {
     @apply mx-40 text-center text-lg my-2;
@@ -225,12 +228,12 @@
 
   /* Global Styles */
   .section-title {
-    @apply text-4xl text-center mt-4 mb-16;
+    @apply text-4xl text-center mt-4 mb-12 sm:mb-24 2xl:mt-10 2xl:mb-24 2xl:text-[60px];
   }
   .btn-dark {
-    @apply bg-neutral py-1 px-2 mr-3 text-sm text-white;
+    @apply bg-neutral py-2 px-3 mr-3 text-sm text-white;
   }
   .btn-light {
-    @apply bg-white py-1 px-2 m-3 text-sm text-neutral border border-neutral;
+    @apply bg-white py-2 px-3 m-3 text-sm text-neutral border border-neutral;
   }
 }

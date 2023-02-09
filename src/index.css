@@ -160,7 +160,7 @@
   @media (max-width: 767px) {
     .about-bottom-wave svg {
       width: calc(104% + 1.3px);
-      height: 173px;
+      height: 100px;
     }
   }
   .about-section {

@@ -38,9 +38,9 @@ const About = () => {
             />
             <div class="px-5 pb-5">
               <h5 class="card-title">Currently Practicing...</h5>
-              <span class="card-data">
+              <div class="card-data">
                 React JS • Typescript • Next JS • React Query • REST APIs
-              </span>
+              </div>
             </div>
           </div>
           <div data-aos="fade-up" class="about-card">
@@ -51,15 +51,15 @@ const About = () => {
             />
             <div class="px-5 pb-5">
               <h5 class="card-title">In the Outdoors</h5>
-              <span class="card-data">
+              <div class="card-data">
                 Knitting • Play music • Bouldering • Travel • Wine/beer tastings
-              </span>
+              </div>
             </div>
           </div>
         </div>
         <br />
         <br />
-        <br />
+
         <BottomWave />
       </section>
     </>

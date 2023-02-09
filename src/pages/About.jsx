@@ -23,11 +23,11 @@ const About = () => {
             />
             <div class="px-5 pb-5">
               <h5 class="card-title">My Skills</h5>
-              <span class="card-data">
+              <div class="card-data">
                 HTML • CSS • JavaScript • React JS • Deployment Services
                 (Netlify, Vercel) • Styled Components • Tailwind CSS • VS Code •
                 Gitflow • Github • Notion • Figma • Jira
-              </span>
+              </div>
             </div>
           </div>
           <div data-aos="fade-up" class="about-card">
@@ -57,6 +57,9 @@ const About = () => {
             </div>
           </div>
         </div>
+        <br />
+        <br />
+        <br />
         <BottomWave />
       </section>
     </>

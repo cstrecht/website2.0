@@ -167,22 +167,22 @@
     @apply min-h-screen  relative;
   }
   .about-description {
-    @apply mx-40 text-center text-lg my-2;
+    @apply mx-3 md:mx-40 text-center text-sm md:text-lg xl:text-xl mt-8;
   }
   .about-container {
-    @apply flex justify-center;
+    @apply flex flex-col justify-center sm:flex-row;
   }
   .about-card {
-    @apply bg-white max-w-sm rounded-t-full shadow m-3;
+    @apply mx-auto sm:bg-white max-w-sm sm:rounded-t-full sm:shadow;
   }
   .card-title {
-    @apply text-base font-semibold tracking-tight text-violet;
+    @apply text-lg text-left sm:text-base tracking-tight text-violet;
   }
   .card-data {
-    @apply text-base font-bold text-neutral;
+    @apply mb-6 text-xl sm:text-base text-neutral;
   }
   .card-image {
-    @apply p-4 h-72 m-auto rounded-t-lg;
+    @apply sm:p-4 h-64 sm:h-72 m-auto rounded-t-lg;
   }
 
   /* - */

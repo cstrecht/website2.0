@@ -5,9 +5,7 @@
 @layer components {
   html,
   body {
-    @apply scroll-smooth font-dmsans;
-    max-width: 100%;
-    overflow-x: hidden;
+    @apply scroll-smooth font-dmsans overflow-x-hidden max-w-full;
   }
 
   /* Navbar */
@@ -90,16 +88,16 @@
     @apply absolute bottom-0 right-0;
   }
   .project-img {
-    @apply object-cover rounded-md md:ml-3;
+    @apply object-cover rounded-md md:ml-3 2xl:max-w-2xl;
   }
   .project-info {
-    @apply md:w-80 text-center lg:mx-6 lg:w-96;
+    @apply md:w-80 text-center lg:mx-6 lg:w-[400px];
   }
   .project-name {
-    @apply md:text-left mt-6 md:mt-0 md:mb-6 text-2xl;
+    @apply md:text-left mt-6 md:mt-0 md:mb-6 text-2xl 2xl:text-4xl;
   }
   .project-desc {
-    @apply mx-8 my-4 sm:my-6 md:my-0 md:text-left md:mx-0 text-xs sm:text-sm lg:my-5 md:mb-6;
+    @apply mx-8 my-4 sm:my-6 md:my-0 md:text-left md:mx-0 text-xs sm:text-sm 2xl:text-xl lg:my-5 md:mb-6;
   }
   /* - */
 
@@ -231,9 +229,9 @@
     @apply text-4xl text-center mt-4 mb-12 sm:mb-24 2xl:mt-10 2xl:mb-24 2xl:text-[60px];
   }
   .btn-dark {
-    @apply bg-neutral py-2 px-3 mr-3 text-sm text-white;
+    @apply bg-neutral py-2 px-3 2xl:px-5 mr-3 text-sm text-white 2xl:text-lg;
   }
   .btn-light {
-    @apply bg-white py-2 px-3 m-3 text-sm text-neutral border border-neutral;
+    @apply bg-white py-2 px-3 2xl:px-5 m-3 text-sm text-neutral 2xl:text-lg border border-neutral;
   }
 }

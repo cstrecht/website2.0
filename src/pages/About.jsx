@@ -1,7 +1,7 @@
 import React from "react";
 import BottomWave from "../components/About/BottomWave";
 import TopWave from "../components/About/TopWave";
-import Card from "../components/About";
+import AboutCard from "../components/About";
 
 const About = () => {
   return (
@@ -14,7 +14,7 @@ const About = () => {
           usability are essential to build meaningful products.
         </p>
         <div className="about-container">
-          <Card />
+          <AboutCard />
         </div>
         <br />
         <br />

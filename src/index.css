@@ -3,12 +3,22 @@
 @tailwind utilities;
 
 @layer components {
+  /* ===GLOBAL=== */
   html,
   body {
     @apply scroll-smooth font-dmsans overflow-x-hidden max-w-full;
   }
+  .section-title {
+    @apply text-4xl text-center mt-4 mb-12 sm:mb-24 2xl:mt-10 2xl:mb-24 2xl:text-[60px];
+  }
+  .btn-dark {
+    @apply bg-neutral py-2 px-3 2xl:px-5 mr-3 text-sm text-white 2xl:text-lg;
+  }
+  .btn-light {
+    @apply bg-white py-2 px-3 2xl:px-5 m-3 text-sm text-neutral 2xl:text-lg border border-neutral;
+  }
 
-  /* Navbar */
+  /* ===NAVBAR=== */
   .nav-link {
     @apply block m-1 sm:my-2 sm:ml-3 sm:mr-4 transition-all ease-in-out text-sm md:text-base xl:text-lg 2xl:text-2xl hover:text-primary;
   }
@@ -33,9 +43,8 @@
   .nav-list {
     @apply flex p-4 flex-row space-x-4 sm:space-x-8 text-base font-medium;
   }
-  /* - */
 
-  /* Introduction Section */
+  /* ===INTRODUCTION SECTION=== */
   .intro-container {
     @apply sm:flex justify-around p-5 pt-0 pb-24 sm:p-24 sm:h-screen;
   }
@@ -72,9 +81,8 @@
   .avatar {
     @apply h-72 mt-10 sm:mt-0 sm:h-56 md:h-96 2xl:h-[550px];
   }
-  /* - */
 
-  /* Projects Section */
+  /* ===PROJECTS SECTION=== */
   #projects {
     @apply flex justify-center min-h-screen;
   }
@@ -99,68 +107,35 @@
   .project-desc {
     @apply mx-8 my-4 sm:my-6 md:my-0 md:text-left md:mx-0 text-xs sm:text-sm 2xl:text-xl lg:my-5 md:mb-6;
   }
-  /* - */
 
-  /* About Me Section */
+  /* ===ABOUT ME SECTION=== */
   .about-top-wave {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    line-height: 0;
-    background-color: #f7eeff;
-    z-index: -1;
+    @apply absolute top-0 left-0 w-full h-full overflow-hidden leading-none bg-secundary -z-10;
   }
-
   .about-top-wave svg {
-    position: relative;
-    display: block;
-    width: calc(110% + 1.3px);
-    height: 135px;
+    @apply relative block w-[calc(110%+1.3px)] h-[135px];
   }
-
   .about-top-wave .shape-fill {
-    fill: #ffffff;
+    @apply fill-white;
   }
-
-  /** For mobile devices **/
   @media (max-width: 767px) {
     .about-top-wave svg {
-      width: calc(104% + 1.3px);
-      height: 96px;
+      @apply w-[calc(104%+1.3px)] h-[96px];
     }
   }
-
   .about-bottom-wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-    z-index: -1;
+    @apply absolute bottom-0 left-0 w-full overflow-hidden leading-none transform rotate-180 -z-10;
   }
-
   .about-bottom-wave svg {
-    position: relative;
-    display: block;
-    width: calc(223% + 1.3px);
-    height: 112px;
+    @apply relative block w-[calc(223%+1.3px)] h-[112px] transform;
     transform: rotateY(180deg);
   }
-
   .about-bottom-wave .shape-fill {
-    fill: #ffffff;
+    @apply fill-white;
   }
-
-  /** For mobile devices **/
   @media (max-width: 767px) {
     .about-bottom-wave svg {
-      width: calc(104% + 1.3px);
-      height: 100px;
+      @apply w-[calc(104%+1.3px)] h-[100px];
     }
   }
   .about-section {
@@ -175,7 +150,6 @@
   .about-card {
     @apply mx-auto md:mx-4 xl:mx-8 2xl:mx-20 w-96;
   }
-  /* 2xl:bg-white md:rounded-t-full md:shadow */
   .card-title {
     @apply text-lg md:text-xl xl:mt-4 2xl:text-3xl text-left tracking-tight text-violet;
   }
@@ -189,33 +163,9 @@
     @apply h-64 sm:h-80 2xl:h-96 xl:h-72 m-auto rounded-t-lg;
   }
 
-  /* - */
-
-  /* Contact Section */
-  .custom-shape-divider-top-1675799209 {
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    z-index: -1;
-    background-color: #ddedea;
-  }
-  .custom-shape-divider-top-1675799209 svg {
-    position: relative;
-    display: block;
-    width: calc(300% + 1.3px);
-    height: 80px;
-  }
-  .custom-shape-divider-top-1675799209 .shape-fill {
-    fill: #ffffff;
-  }
-  /** For mobile devices **/
-  @media (max-width: 767px) {
-    .custom-shape-divider-top-1675799209 svg {
-      width: calc(300% + 1.3px);
-      height: 70px;
-    }
+  /* ===CONTACT SECTION=== */
+  #contact {
+    @apply h-fit relative;
   }
   .contact-container {
     @apply flex flex-col sm:flex-row sm:justify-evenly 2xl:justify-center 2xl:my-12;
@@ -238,24 +188,38 @@
   .contact-form-input {
     @apply text-neutral text-sm 2xl:text-lg w-full p-3;
   }
+  .contact-find-text {
+    @apply text-sm 2xl:text-lg mb-2 align-top;
+  }
   .message-btn {
     @apply py-3 px-5 text-sm 2xl:text-lg w-full text-center text-white bg-neutral transition-all ease-in-out hover:bg-primary;
   }
 
-  /* - */
-
-  /* Footer */
-  /* css here */
-  /* - */
-
-  /* Global Styles */
-  .section-title {
-    @apply text-4xl text-center mt-4 mb-12 sm:mb-24 2xl:mt-10 2xl:mb-24 2xl:text-[60px];
+  /* ===FOOTER=== */
+  .contact-top-wave {
+    @apply bottom-0 left-0 w-full overflow-hidden mt-8 leading-none -z-10 bg-pastel-green;
   }
-  .btn-dark {
-    @apply bg-neutral py-2 px-3 2xl:px-5 mr-3 text-sm text-white 2xl:text-lg;
+  .contact-top-wave svg {
+    @apply relative block w-[calc(300%+1.3px)] h-[80px];
   }
-  .btn-light {
-    @apply bg-white py-2 px-3 2xl:px-5 m-3 text-sm text-neutral 2xl:text-lg border border-neutral;
+  .contact-top-wave .shape-fill {
+    @apply fill-white;
+  }
+  @media (max-width: 767px) {
+    .contact-top-wave svg {
+      @apply w-[calc(300%+1.3px)] h-[70px];
+    }
+  }
+  .footer-rights {
+    @apply text-center mb-6 font-dmsans text-sm 2xl:text-base text-neutral;
+  }
+  .back-to-top-container {
+    @apply hidden md:flex relative;
+  }
+  .back-to-top-btn {
+    @apply flex flex-col justify-center items-center absolute right-8 2xl:right-24 z-30 animate-[bounce_2s_ease-in-out_infinite];
+  }
+  .back-to-top-txt {
+    @apply text-center text-xs 2xl:text-base;
   }
 }

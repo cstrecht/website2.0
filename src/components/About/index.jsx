@@ -1,7 +1,7 @@
 import React from "react";
 import skills from "../../skills";
 
-const Card = () => {
+const AboutCard = () => {
   return (
     <>
       {skills.map((skill, id) => {
@@ -22,4 +22,4 @@ const Card = () => {
     </>
   );
 };
-export default Card;
+export default AboutCard;

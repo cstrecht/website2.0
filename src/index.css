@@ -127,7 +127,7 @@
     @apply absolute bottom-0 left-0 w-full overflow-hidden leading-none transform rotate-180 -z-10;
   }
   .about-bottom-wave svg {
-    @apply relative block w-[calc(223%+1.3px)] h-[112px] transform;
+    @apply relative block w-[calc(223%+1.3px)] h-[112px] 2xl:h-[85px] transform;
     transform: rotateY(180deg);
   }
   .about-bottom-wave .shape-fill {
@@ -142,7 +142,7 @@
     @apply min-h-fit relative;
   }
   .about-description {
-    @apply mx-3 md:mx-40 text-center text-sm sm:text-lg xl:text-xl xl:mb-8 mt-8;
+    @apply mx-3 md:mx-40 text-center text-sm sm:text-lg 2xl:text-xl xl:mb-8 mt-8;
   }
   .about-container {
     @apply flex flex-col justify-center md:flex-row;
@@ -171,7 +171,7 @@
     @apply flex flex-col sm:flex-row sm:justify-evenly 2xl:justify-center 2xl:my-12;
   }
   .contact-social-links {
-    @apply w-fit mx-auto sm:mx-0 2xl:mx-16;
+    @apply w-fit mx-auto sm:mx-0 2xl:mx-40;
   }
   .contact-social-list {
     @apply text-3xl 2xl:text-[45px] mb-12 grid grid-cols-2 gap-x-12 sm:grid-cols-1;
@@ -194,6 +194,15 @@
   .message-btn {
     @apply py-3 px-5 text-sm 2xl:text-lg w-full text-center text-white bg-neutral transition-all ease-in-out hover:bg-primary;
   }
+  .back-to-top-container {
+    @apply hidden md:flex relative;
+  }
+  .back-to-top-btn {
+    @apply flex flex-col justify-center items-center absolute right-8 2xl:right-32 z-30 animate-[bounce_2s_ease-in-out_infinite];
+  }
+  .back-to-top-txt {
+    @apply text-center text-xs 2xl:text-base;
+  }
 
   /* ===FOOTER=== */
   .contact-top-wave {
@@ -212,14 +221,5 @@
   }
   .footer-rights {
     @apply text-center mb-6 font-dmsans text-sm 2xl:text-base text-neutral;
-  }
-  .back-to-top-container {
-    @apply hidden md:flex relative;
-  }
-  .back-to-top-btn {
-    @apply flex flex-col justify-center items-center absolute right-8 2xl:right-24 z-30 animate-[bounce_2s_ease-in-out_infinite];
-  }
-  .back-to-top-txt {
-    @apply text-center text-xs 2xl:text-base;
   }
 }

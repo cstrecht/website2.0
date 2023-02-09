@@ -164,25 +164,26 @@
     }
   }
   .about-section {
-    @apply min-h-screen  relative;
+    @apply min-h-fit relative;
   }
   .about-description {
-    @apply mx-3 md:mx-40 text-center text-sm md:text-lg xl:text-xl mt-8;
+    @apply mx-3 md:mx-40 text-center text-sm sm:text-lg xl:text-xl xl:mb-8 mt-8;
   }
   .about-container {
-    @apply flex flex-col justify-center sm:flex-row;
+    @apply flex flex-col justify-center md:flex-row;
   }
   .about-card {
-    @apply mx-auto sm:bg-white max-w-sm sm:rounded-t-full sm:shadow;
+    @apply mx-auto md:mx-4 xl:mx-8 2xl:mx-20 w-96;
   }
+  /* 2xl:bg-white md:rounded-t-full md:shadow */
   .card-title {
-    @apply text-lg text-left sm:text-base tracking-tight text-violet;
+    @apply text-lg md:text-xl xl:mt-4 2xl:text-3xl text-left tracking-tight text-violet;
   }
   .card-data {
-    @apply mb-6 text-xl sm:text-base text-neutral;
+    @apply mb-6 text-xl sm:text-xl 2xl:text-2xl text-neutral;
   }
   .card-image {
-    @apply sm:p-4 h-64 sm:h-72 m-auto rounded-t-lg;
+    @apply h-64 sm:h-80 2xl:h-96 xl:h-72 m-auto rounded-t-lg;
   }
 
   /* - */

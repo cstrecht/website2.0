@@ -23,6 +23,8 @@ const Socials = () => {
                 <div className={social.tooltip}>{social.name}</div>
               </a>
             );
+          } else {
+            return null;
           }
         })}
       </div>

@@ -4,7 +4,7 @@ import BackToTop from "../components/BackToTop";
 const Contact = () => {
   return (
     <section id="contact" className="h-fit relative">
-      <h1 className="section-title pt-6 mb-12">Let's get in touch.</h1>
+      <h1 className="section-title pt-6 lg:pt-0 mb-12">Let's get in touch.</h1>
       <BackToTop />
       <div className="contact-container">
         <div className="contact-social-links">

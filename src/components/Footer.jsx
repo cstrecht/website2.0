@@ -25,7 +25,7 @@ const Footer = () => {
           class="shape-fill"
         ></path>
       </svg>
-      <div className="text-center mb-6 font-dmsans text-sm 2xl:text-base">
+      <div className="text-center mb-6 font-dmsans text-sm 2xl:text-base text-neutral">
         made with ♡ by carolina strecht. © {currentYear} All Rights Reserved.
       </div>
     </div>

@@ -8,7 +8,7 @@ const Contact = () => {
       <BackToTop />
       <div className="contact-container">
         <div className="contact-social-links">
-          <h5 className="text-sm 2xl:text-lg mb-2">Find me at</h5>
+          <h5 className="text-sm 2xl:text-lg mb-2 align-top">Find me at</h5>
           <ul className="contact-social-list">
             <li>
               <a

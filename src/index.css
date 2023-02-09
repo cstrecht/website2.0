@@ -148,7 +148,7 @@
     position: relative;
     display: block;
     width: calc(223% + 1.3px);
-    height: 132px;
+    height: 112px;
     transform: rotateY(180deg);
   }
 
@@ -215,10 +215,10 @@
     }
   }
   .contact-container {
-    @apply flex flex-col sm:flex-row sm:justify-evenly 2xl:my-12;
+    @apply flex flex-col sm:flex-row sm:justify-evenly 2xl:justify-center 2xl:my-12;
   }
   .contact-social-links {
-    @apply w-fit mx-auto sm:mx-0;
+    @apply w-fit mx-auto sm:mx-0 2xl:mx-16;
   }
   .contact-social-list {
     @apply text-3xl 2xl:text-[45px] mb-12 grid grid-cols-2 gap-x-12 sm:grid-cols-1;

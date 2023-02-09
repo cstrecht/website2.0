@@ -24,9 +24,8 @@ const About = () => {
             <div class="px-5 pb-5">
               <h5 class="card-title">My Skills</h5>
               <div class="card-data">
-                HTML • CSS • JavaScript • React JS • Deployment Services
-                (Netlify, Vercel) • Styled Components • Tailwind CSS • VS Code •
-                Gitflow • Github • Notion • Figma • Jira
+                React JS • CI/CD • Tailwind CSS • VSCode • Github • Notion •
+                Figma
               </div>
             </div>
           </div>
@@ -39,7 +38,8 @@ const About = () => {
             <div class="px-5 pb-5">
               <h5 class="card-title">Currently Practicing...</h5>
               <div class="card-data">
-                React JS • Typescript • Next JS • React Query • REST APIs
+                React JS • Typescript • Next JS • Styled Components • React
+                Query • REST APIs
               </div>
             </div>
           </div>
@@ -52,7 +52,7 @@ const About = () => {
             <div class="px-5 pb-5">
               <h5 class="card-title">In the Outdoors</h5>
               <div class="card-data">
-                Knitting • Play music • Bouldering • Travel • Wine/beer tastings
+                Knitting • Play music • Bouldering • Travel • Wine/Beer tasting
               </div>
             </div>
           </div>

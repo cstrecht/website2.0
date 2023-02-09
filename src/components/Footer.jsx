@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   let currentYear = new Date().getFullYear();
   return (
-    <div class="custom-shape-divider-top-1675799209 mt-0 sm:mt-0">
+    <div class="custom-shape-divider-top-1675799209 mt-12 sm:mt-0">
       <svg
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"

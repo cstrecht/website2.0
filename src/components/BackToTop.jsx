@@ -2,8 +2,8 @@ import React from "react";
 
 const BackToTop = () => {
   return (
-    <div className="hidden sm:flex relative" data-aos="fade-up">
-      <div className="flex flex-col justify-center items-center absolute right-5 z-30">
+    <div className="hidden md:flex relative" data-aos="fade-up">
+      <div className="flex flex-col justify-center items-center absolute right-8 2xl:right-24 z-30 animate-[bounce_2s_ease-in-out_infinite]">
         <a href="#intro" className="text-neutral ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +19,7 @@ const BackToTop = () => {
             />
           </svg>
         </a>
-        <span className="text-center text-xs">Back to top</span>
+        <span className="text-center text-xs 2xl:text-base">Back to top</span>
       </div>
     </div>
   );

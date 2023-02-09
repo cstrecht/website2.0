@@ -190,7 +190,6 @@
 
   /* Contact Section */
   .custom-shape-divider-top-1675799209 {
-    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -199,24 +198,45 @@
     z-index: -1;
     background-color: #ddedea;
   }
-
   .custom-shape-divider-top-1675799209 svg {
     position: relative;
     display: block;
     width: calc(300% + 1.3px);
-    height: 155px;
+    height: 80px;
   }
-
   .custom-shape-divider-top-1675799209 .shape-fill {
     fill: #ffffff;
   }
-
   /** For mobile devices **/
   @media (max-width: 767px) {
     .custom-shape-divider-top-1675799209 svg {
       width: calc(300% + 1.3px);
-      height: 101px;
+      height: 70px;
     }
+  }
+  .contact-container {
+    @apply flex flex-col sm:flex-row sm:justify-evenly 2xl:my-12;
+  }
+  .contact-social-links {
+    @apply w-fit mx-auto sm:mx-0;
+  }
+  .contact-social-list {
+    @apply text-3xl 2xl:text-[45px] mb-12 grid grid-cols-2 gap-x-12 sm:grid-cols-1;
+  }
+  .contact-social-link {
+    @apply transition-all ease-in-out hover:text-primary;
+  }
+  .contact-form-container {
+    @apply bg-pastel-green p-4 w-80 xl:w-96 2xl:w-[450px] mx-auto sm:mx-0;
+  }
+  .contact-form {
+    @apply text-neutral font-dmsans space-y-5 w-full h-full;
+  }
+  .contact-form-input {
+    @apply text-neutral text-sm 2xl:text-lg w-full p-3;
+  }
+  .message-btn {
+    @apply py-3 px-5 text-sm 2xl:text-lg w-full text-center text-white bg-neutral transition-all ease-in-out hover:bg-primary;
   }
 
   /* - */

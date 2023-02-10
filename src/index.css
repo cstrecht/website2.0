@@ -6,27 +6,27 @@
   /* ===GLOBAL=== */
   html,
   body {
-    @apply scroll-smooth font-dmsans overflow-x-hidden max-w-full;
+    @apply max-w-full overflow-x-hidden scroll-smooth font-dmsans;
   }
   .section-title {
-    @apply text-4xl text-center mt-4 mb-12 sm:mb-24 2xl:mt-10 2xl:mb-24 2xl:text-[60px];
+    @apply mt-4 mb-12 text-center text-4xl sm:mb-24 2xl:mt-10 2xl:mb-24 2xl:text-[60px];
   }
   .btn-dark {
-    @apply bg-neutral py-2 px-3 2xl:px-5 mr-3 text-sm text-white 2xl:text-lg;
+    @apply mr-3 bg-neutral py-2 px-3 text-sm text-white 2xl:px-5 2xl:text-lg;
   }
   .btn-light {
-    @apply bg-white py-2 px-3 2xl:px-5 m-3 text-sm text-neutral 2xl:text-lg border border-neutral;
+    @apply m-3 border border-neutral bg-white py-2 px-3 text-sm text-neutral 2xl:px-5 2xl:text-lg;
   }
 
   /* ===NAVBAR=== */
   .nav-link {
-    @apply block m-1 sm:my-2 sm:ml-3 sm:mr-4 transition-all ease-in-out text-sm md:text-base xl:text-lg 2xl:text-2xl hover:text-primary;
+    @apply m-1 block text-sm transition-all ease-in-out hover:text-primary sm:my-2 sm:ml-3 sm:mr-4 md:text-base xl:text-lg 2xl:text-2xl;
   }
   .nav-container {
-    @apply w-full px-14 pt-6 pb-8 sm:py-4  sm:absolute;
+    @apply w-full px-14 pt-6 pb-8 sm:absolute  sm:py-4;
   }
   .nav-flex {
-    @apply container flex flex-wrap items-center justify-center md:justify-between mx-auto;
+    @apply container mx-auto flex flex-wrap items-center justify-center md:justify-between;
   }
   .nav-logo {
     @apply flex items-center;
@@ -35,21 +35,21 @@
     @apply mr-3 h-10 sm:h-14;
   }
   .nav-username {
-    @apply self-center text-lg lg:text-2xl 2xl:text-3xl font-semibold whitespace-nowrap;
+    @apply self-center whitespace-nowrap text-lg font-semibold lg:text-2xl 2xl:text-3xl;
   }
   .nav-sections {
     @apply block w-auto;
   }
   .nav-list {
-    @apply flex p-4 flex-row space-x-4 sm:space-x-8 text-base font-medium;
+    @apply flex flex-row space-x-4 p-4 text-base font-medium sm:space-x-8;
   }
 
   /* ===INTRODUCTION SECTION=== */
   .intro-container {
-    @apply sm:flex justify-around p-5 pt-0 pb-24 sm:p-24 sm:h-screen;
+    @apply justify-around p-5 pt-0 pb-24 sm:flex sm:h-screen sm:p-24;
   }
   .intro-text {
-    @apply my-auto text-2xl text-center sm:text-left md:text-4xl 2xl:text-[60px];
+    @apply my-auto text-center text-2xl sm:text-left md:text-4xl 2xl:text-[60px];
   }
   .intro-welcome {
     @apply pb-3 2xl:pb-6;
@@ -58,76 +58,76 @@
     @apply flex justify-center sm:justify-start;
   }
   .socials-container {
-    @apply flex sm:relative space-x-10 sm:space-x-20 mt-8 2xl:mt-12 2xl:space-x-24;
+    @apply mt-8 flex space-x-10 sm:relative sm:space-x-20 2xl:mt-12 2xl:space-x-24;
   }
   .social-icon {
-    @apply h-10 2xl:h-14 sm:absolute;
+    @apply h-10 sm:absolute 2xl:h-14;
   }
   .github-tooltip {
-    @apply hidden sm:flex group-hover:opacity-100 transition-opacity bg-primary px-1 text-sm 2xl:text-base text-white rounded-md absolute
-     opacity-0 top-3 2xl:top-6 left-4 mt-4 mx-auto border-2 border-white;
+    @apply absolute top-3 left-4 mx-auto mt-4 hidden rounded-md border-2 border-white bg-primary px-1
+     text-sm text-white opacity-0 transition-opacity group-hover:opacity-100 sm:flex 2xl:top-6 2xl:text-base;
   }
   .linkedin-tooltip {
-    @apply hidden sm:flex group-hover:opacity-100 transition-opacity bg-primary px-1 text-sm 2xl:text-base text-white rounded-md absolute
-     opacity-0 top-3 2xl:top-6 left-24 2xl:left-28 mt-4 mx-auto border-2 border-white;
+    @apply absolute top-3 left-24 mx-auto mt-4 hidden rounded-md border-2 border-white bg-primary px-1
+     text-sm text-white opacity-0 transition-opacity group-hover:opacity-100 sm:flex 2xl:top-6 2xl:left-28 2xl:text-base;
   }
   .twitter-tooltip {
-    @apply hidden sm:flex group-hover:opacity-100 transition-opacity bg-primary px-1 text-sm 2xl:text-base text-white rounded-md absolute
-     opacity-0 top-3 2xl:top-6 left-44 2xl:left-52 mt-4 mx-auto border-2 border-white;
+    @apply absolute top-3 left-44 mx-auto mt-4 hidden rounded-md border-2 border-white bg-primary px-1
+     text-sm text-white opacity-0 transition-opacity group-hover:opacity-100 sm:flex 2xl:top-6 2xl:left-52 2xl:text-base;
   }
   .intro-img {
     @apply my-auto flex justify-center;
   }
   .avatar {
-    @apply h-72 mt-10 sm:mt-0 sm:h-56 md:h-96 2xl:h-[550px];
+    @apply mt-10 h-72 sm:mt-0 sm:h-56 md:h-96 2xl:h-[550px];
   }
 
   /* ===PROJECTS SECTION=== */
   #projects {
-    @apply flex justify-center min-h-screen;
+    @apply flex min-h-screen justify-center;
   }
   .projects-container {
     @apply flex flex-col;
   }
   .project-container {
-    @apply flex flex-col mb-14 md:mb-32 md:flex-row md:pr-0;
+    @apply mb-14 flex flex-col md:mb-32 md:flex-row md:pr-0;
   }
   .project-view {
     @apply absolute bottom-0 right-0;
   }
   .project-img {
-    @apply object-cover rounded-md md:ml-3 2xl:max-w-2xl;
+    @apply rounded-md object-cover md:ml-3 2xl:max-w-2xl;
   }
   .project-info {
-    @apply md:w-80 text-center lg:mx-6 lg:w-[400px];
+    @apply text-center md:w-80 lg:mx-6 lg:w-[400px];
   }
   .project-name {
-    @apply md:text-left mt-6 md:mt-0 md:mb-6 text-2xl 2xl:text-4xl;
+    @apply mt-6 text-2xl md:mt-0 md:mb-6 md:text-left 2xl:text-4xl;
   }
   .project-desc {
-    @apply mx-8 my-4 sm:my-6 md:my-0 md:text-left md:mx-0 text-xs sm:text-sm 2xl:text-xl lg:my-5 md:mb-6;
+    @apply mx-8 my-4 text-xs sm:my-6 sm:text-sm md:my-0 md:mx-0 md:mb-6 md:text-left lg:my-5 2xl:text-xl;
   }
 
   /* ===ABOUT ME SECTION=== */
   .about-top-wave {
-    @apply absolute top-0 left-0 w-full h-full overflow-hidden leading-none bg-secundary -z-10;
+    @apply absolute top-0 left-0 -z-10 h-full w-full overflow-hidden bg-secundary leading-none;
   }
   .about-top-wave svg {
-    @apply relative block w-[calc(110%+1.3px)] h-[135px];
+    @apply relative block h-[135px] w-[calc(110%+1.3px)];
   }
   .about-top-wave .shape-fill {
     @apply fill-white;
   }
   @media (max-width: 767px) {
     .about-top-wave svg {
-      @apply w-[calc(104%+1.3px)] h-[96px];
+      @apply h-[96px] w-[calc(104%+1.3px)];
     }
   }
   .about-bottom-wave {
-    @apply absolute bottom-0 left-0 w-full overflow-hidden leading-none transform rotate-180 -z-10;
+    @apply absolute bottom-0 left-0 -z-10 w-full rotate-180 transform overflow-hidden leading-none;
   }
   .about-bottom-wave svg {
-    @apply relative block w-[calc(223%+1.3px)] h-[112px] 2xl:h-[85px] transform;
+    @apply relative block h-[112px] w-[calc(223%+1.3px)] transform 2xl:h-[85px];
     transform: rotateY(180deg);
   }
   .about-bottom-wave .shape-fill {
@@ -135,76 +135,76 @@
   }
   @media (max-width: 767px) {
     .about-bottom-wave svg {
-      @apply w-[calc(104%+1.3px)] h-[100px];
+      @apply h-[100px] w-[calc(104%+1.3px)];
     }
   }
   .about-section {
-    @apply min-h-fit relative;
+    @apply relative min-h-fit;
   }
   .about-description {
-    @apply mx-3 md:mx-40 text-center text-sm sm:text-lg 2xl:text-xl xl:mb-8 mt-8;
+    @apply mx-3 mt-8 text-center text-sm sm:text-lg md:mx-40 xl:mb-8 2xl:text-xl;
   }
   .about-container {
     @apply flex flex-col justify-center md:flex-row;
   }
   .about-card {
-    @apply mx-auto md:mx-4 xl:mx-8 2xl:mx-20 w-96;
+    @apply mx-auto w-96 md:mx-4 xl:mx-8 2xl:mx-20;
   }
   .card-title {
-    @apply text-lg md:text-xl xl:mt-4 2xl:text-3xl text-left tracking-tight text-violet;
+    @apply text-left text-lg tracking-tight text-violet md:text-xl xl:mt-4 2xl:text-3xl;
   }
   .card-data {
-    @apply mb-6 text-xl sm:text-xl 2xl:text-2xl text-neutral;
+    @apply mb-6 text-xl text-neutral sm:text-xl 2xl:text-2xl;
   }
   .card-text {
     @apply px-5 pb-5;
   }
   .card-image {
-    @apply h-64 sm:h-80 2xl:h-96 xl:h-72 m-auto rounded-t-lg;
+    @apply m-auto h-64 rounded-t-lg sm:h-80 xl:h-72 2xl:h-96;
   }
 
   /* ===CONTACT SECTION=== */
   #contact {
-    @apply h-fit relative;
+    @apply relative h-fit;
   }
   .contact-container {
-    @apply flex flex-col sm:flex-row sm:justify-evenly 2xl:justify-center 2xl:my-12;
+    @apply flex flex-col sm:flex-row sm:justify-evenly 2xl:my-12 2xl:justify-center;
   }
   .contact-social-links {
-    @apply w-fit mx-auto sm:mx-0 2xl:mx-40;
+    @apply mx-auto w-fit sm:mx-0 2xl:mx-40;
   }
   .contact-social-list {
-    @apply text-3xl 2xl:text-[45px] mb-3 grid grid-cols-2 gap-x-12 sm:grid-cols-1;
+    @apply mb-3 grid grid-cols-2 gap-x-12 text-3xl sm:grid-cols-1 2xl:text-[45px];
   }
   .contact-social-link {
     @apply transition-all ease-in-out hover:text-primary;
   }
   .contact-form-container {
-    @apply bg-pastel-green p-4 w-80 xl:w-96 2xl:w-[450px] mx-auto sm:mx-0;
+    @apply mx-auto w-80 bg-pastel-green p-4 sm:mx-0 xl:w-96 2xl:w-[450px];
   }
   .contact-form {
-    @apply text-neutral font-dmsans space-y-5 w-full h-full;
+    @apply h-full w-full space-y-5 font-dmsans text-neutral;
   }
   .contact-form-input {
-    @apply text-neutral text-sm 2xl:text-lg w-full p-3;
+    @apply w-full p-3 text-sm text-neutral 2xl:text-lg;
   }
   .contact-find-text {
-    @apply text-sm 2xl:text-lg mb-2 align-top;
+    @apply mb-2 align-top text-sm 2xl:text-lg;
   }
   .message-btn {
-    @apply py-3 px-5 text-sm 2xl:text-lg w-full text-center text-white bg-neutral transition-all ease-in-out hover:bg-primary;
+    @apply w-full bg-neutral py-3 px-5 text-center text-sm text-white transition-all ease-in-out hover:bg-primary 2xl:text-lg;
   }
   .back-to-top-container {
-    @apply hidden md:flex relative;
+    @apply relative hidden md:flex;
   }
   .back-to-top-btn {
-    @apply flex flex-col justify-center items-center absolute right-8 2xl:right-32 z-30 animate-[bounce_2s_ease-in-out_infinite];
+    @apply absolute right-8 z-30 flex animate-[bounce_2s_ease-in-out_infinite] flex-col items-center justify-center 2xl:right-32;
   }
   .back-to-top-txt {
     @apply text-center text-xs 2xl:text-base;
   }
   .download-btn {
-    @apply px-5 text-sm mb-12 2xl:text-lg sm:w-full text-center text-white bg-neutral transition-all ease-in-out hover:bg-primary py-2;
+    @apply mb-12 bg-neutral px-5 py-2 text-center text-sm text-white transition-all ease-in-out hover:bg-primary sm:w-full 2xl:text-lg;
   }
   .download-btn-container {
     @apply flex sm:justify-center;
@@ -212,20 +212,20 @@
 
   /* ===FOOTER=== */
   .contact-top-wave {
-    @apply bottom-0 left-0 w-full overflow-hidden mt-8 leading-none -z-10 bg-pastel-green;
+    @apply bottom-0 left-0 -z-10 mt-8 w-full overflow-hidden bg-pastel-green leading-none;
   }
   .contact-top-wave svg {
-    @apply relative block w-[calc(300%+1.3px)] h-[80px];
+    @apply relative block h-[80px] w-[calc(300%+1.3px)];
   }
   .contact-top-wave .shape-fill {
     @apply fill-white;
   }
   @media (max-width: 767px) {
     .contact-top-wave svg {
-      @apply w-[calc(300%+1.3px)] h-[70px];
+      @apply h-[70px] w-[calc(300%+1.3px)];
     }
   }
   .footer-rights {
-    @apply text-center mb-6 font-dmsans text-sm 2xl:text-base text-neutral;
+    @apply mb-6 text-center font-dmsans text-sm text-neutral 2xl:text-base;
   }
 }

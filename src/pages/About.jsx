@@ -7,7 +7,7 @@ const About = () => {
   return (
     <>
       <section id="about" className="about-section">
-        <h1 className="section-title pt-12 m-3">About me</h1>
+        <h1 className="section-title m-3 pt-12">About me</h1>
         <TopWave />
         <p className="about-description">
           I strongly believe that focusing on the small details and prioritizing

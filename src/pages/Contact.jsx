@@ -7,7 +7,7 @@ import DownloadCV from "../components/About/DownloadCV";
 const Contact = () => {
   return (
     <section id="contact">
-      <h1 className="section-title pt-6 mb-12 lg:pt-0">Let's get in touch.</h1>
+      <h1 className="section-title mb-12 pt-6 lg:pt-0">Let's get in touch.</h1>
       <BackToTop />
       <div className="contact-container">
         <div className="contact-social-links">

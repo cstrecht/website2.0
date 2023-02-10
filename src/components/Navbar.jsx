@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="nav-flex">
           <div className="nav-logo">
             <img src={avatarRight} className="nav-img" alt="Carolina's Logo" />
-            <span className="nav-username">/cstrecht</span>
+            <span className="nav-username">/cstrecht.</span>
           </div>
           <div className="nav-sections">
             <ul className="nav-list">

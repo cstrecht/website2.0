@@ -174,7 +174,7 @@
     @apply w-fit mx-auto sm:mx-0 2xl:mx-40;
   }
   .contact-social-list {
-    @apply text-3xl 2xl:text-[45px] mb-12 grid grid-cols-2 gap-x-12 sm:grid-cols-1;
+    @apply text-3xl 2xl:text-[45px] mb-3 grid grid-cols-2 gap-x-12 sm:grid-cols-1;
   }
   .contact-social-link {
     @apply transition-all ease-in-out hover:text-primary;
@@ -202,6 +202,12 @@
   }
   .back-to-top-txt {
     @apply text-center text-xs 2xl:text-base;
+  }
+  .download-btn {
+    @apply px-5 text-sm mb-12 2xl:text-lg sm:w-full text-center text-white bg-neutral transition-all ease-in-out hover:bg-primary py-2;
+  }
+  .download-btn-container {
+    @apply flex sm:justify-center;
   }
 
   /* ===FOOTER=== */

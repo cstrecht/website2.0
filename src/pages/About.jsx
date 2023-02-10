@@ -2,7 +2,6 @@ import React from "react";
 import BottomWave from "../components/About/BottomWave";
 import TopWave from "../components/About/TopWave";
 import AboutCard from "../components/About";
-import DownloadCV from "../components/About/DownloadCV";
 
 const About = () => {
   return (
@@ -17,7 +16,6 @@ const About = () => {
         <div className="about-container">
           <AboutCard />
         </div>
-        <DownloadCV />
         <br />
         <br />
         <BottomWave />

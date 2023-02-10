@@ -2,6 +2,7 @@ import React from "react";
 import BackToTop from "../components/BackToTop";
 import Socials from "../components/Contact/Socials";
 import Form from "../components/Contact/Form";
+import DownloadCV from "../components/About/DownloadCV";
 
 const Contact = () => {
   return (
@@ -12,6 +13,7 @@ const Contact = () => {
         <div className="contact-social-links">
           <h5 className="contact-find-text">Find me at</h5>
           <Socials />
+          <DownloadCV />
         </div>
         <div className="contact-form-container">
           <Form />

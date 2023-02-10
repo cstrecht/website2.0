@@ -8,9 +8,12 @@ const Welcome = () => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["I'm a frontend developer."],
-      startDelay: 300,
-      typeSpeed: 50,
+      strings: ["I'm a frontend devlopre^300", "I'm a frontend developer."],
+      smartBackspace: true,
+      startDelay: 400,
+      typeSpeed: 60,
+      backSpeed: 50,
+      backDelay: 50,
     });
     return () => {
       typed.destroy();

@@ -11,7 +11,7 @@ const Socials = () => {
               <a
                 key={social.id}
                 className="group"
-                href="https://github.com/cstrecht"
+                href={social.href}
                 target="_blank"
                 rel="noreferrer"
               >

@@ -46,7 +46,7 @@ const projects = [
   },
   {
     id: 4,
-    name: "My Website",
+    name: "This Website",
     alt: "My Website",
     description:
       "My personal portfolio website serves as a platform to highlight my skills, experiences, and projects. It acts as a tool for showcasing my professional identity and abilities to the world :)",

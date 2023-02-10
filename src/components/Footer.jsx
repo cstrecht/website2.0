@@ -26,7 +26,8 @@ const Footer = () => {
         ></path>
       </svg>
       <div className="footer-rights">
-        made with ♡ by carolina strecht. © {currentYear} All Rights Reserved.
+        designed and coded with ♡ by carolina strecht. © {currentYear} All
+        Rights Reserved.
       </div>
     </div>
   );

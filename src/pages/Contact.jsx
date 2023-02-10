@@ -11,7 +11,7 @@ const Contact = () => {
       <BackToTop />
       <div className="contact-container">
         <div className="contact-social-links">
-          <h5 className="contact-find-text">Find me at</h5>
+          <h5 className="contact-find-text">Find me on</h5>
           <Socials />
           <DownloadCV />
         </div>

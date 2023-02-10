@@ -16,7 +16,7 @@ const skills = [
   {
     id: 3,
     title: "In the Outdoors",
-    data: "Knitting • Play music • Bouldering • Travel • Wine/Beer tasting",
+    data: "Crocheting • Playing music • Bouldering • Traveling • Wine/Beer tasting",
     illustration: "https://illustrations.popsy.co/fuchsia/flower.svg",
     alt: "Outdoors illustration",
   },

@@ -66,7 +66,7 @@ const projects = [
     background:
       "mx-auto h-52 w-80 sm:h-60 sm:w-96 xl:h-80 xl:w-[530px] 2xl:h-[400px] 2xl:w-[685px] md:mx-6 bg-pastel-pink relative rounded-md",
     scrollFade: "fade-right",
-    demo: "",
+    // demo: "",
     image: projectmakeup,
   },
 ];

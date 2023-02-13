@@ -23,12 +23,16 @@ const Project = () => {
             <div className="project-info">
               <h1 className="project-name">{project.name}</h1>
               <p className="project-desc">{project.description}</p>
-              <a href={project.demo} target="_blank" rel="noreferrer">
-                <button className="btn-dark">Try demo</button>
-              </a>
-              <a href={project.repo} target="_blank" rel="noreferrer">
-                <button className="btn-light">View code</button>
-              </a>
+              {project.demo && (
+                <a href={project.demo} target="_blank" rel="noreferrer">
+                  <button className="btn-dark">Try demo</button>
+                </a>
+              )}
+              {project.repo && (
+                <a href={project.repo} target="_blank" rel="noreferrer">
+                  <button className="btn-light">View code</button>
+                </a>
+              )}
             </div>
           </div>
         );

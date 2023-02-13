@@ -157,7 +157,7 @@
     @apply mb-6 text-xl text-neutral sm:text-xl 2xl:text-2xl;
   }
   .card-text {
-    @apply px-5 pb-5;
+    @apply px-5 pb-32;
   }
   .card-image {
     @apply m-auto h-64 rounded-t-lg sm:h-80 xl:h-72 2xl:h-96;
@@ -228,4 +228,16 @@
   .footer-rights {
     @apply mb-6 text-center font-dmsans text-sm text-neutral 2xl:text-base;
   }
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 8px;
 }

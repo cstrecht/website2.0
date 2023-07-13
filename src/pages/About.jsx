@@ -10,7 +10,7 @@ const About = () => {
         <h1 className="section-title m-3 pt-28">About me</h1>
         <TopWave />
         <p className="about-description">
-          I strongly believe that focusing on the small details and prioritizing
+          I believe that focusing on the small details and prioritizing
           usability are essential to build meaningful products.
         </p>
         <div className="about-container">

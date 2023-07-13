@@ -151,10 +151,10 @@
     @apply mx-auto w-96 md:mx-4 xl:mx-8 2xl:mx-20;
   }
   .card-title {
-    @apply text-left text-lg tracking-tight text-violet md:text-xl xl:mt-4 2xl:text-3xl;
+    @apply text-left text-lg font-bold tracking-tight md:text-xl xl:mt-4 2xl:text-3xl;
   }
   .card-data {
-    @apply mb-6 text-xl text-neutral sm:text-xl 2xl:text-2xl;
+    @apply mb-6 text-xl  text-neutral sm:text-xl;
   }
   .card-text {
     @apply px-5 pb-32;

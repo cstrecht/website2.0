@@ -27,11 +27,5 @@ const socials = [
     icon: twitter,
     tooltip: "twitter-tooltip",
   },
-  {
-    id: 4,
-    name: "Instagram",
-    href: "https://www.instagram.com/carolina_strx/",
-    alt: "Instagram",
-  },
 ];
 export default socials;

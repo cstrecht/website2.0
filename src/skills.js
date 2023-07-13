@@ -1,23 +1,23 @@
 const skills = [
   {
     id: 1,
-    title: "My Skills",
-    data: "HTML5/CSS3/JS • React JS • CI/CD • Tailwind CSS • VSCode • Github • Notion • Figma",
-    illustration: "https://illustrations.popsy.co/fuchsia/work-from-home.svg",
+    title: "Skills",
+    data: "HTML • CSS • Typescript • React • RESTful APIs • Tailwind CSS • Git • Bash",
+    illustration: "https://illustrations.popsy.co/white/work-from-home.svg",
     alt: "Skills illustration",
   },
   {
     id: 2,
     title: "Currently Practicing...",
-    data: "React JS • Typescript • Next JS • styled-components • React Query • REST APIs",
-    illustration: "https://illustrations.popsy.co/fuchsia/product-launch.svg",
+    data: "Next.js • styled-components • React Query",
+    illustration: "https://illustrations.popsy.co/white/product-launch.svg",
     alt: "Currently Practicing illustration",
   },
   {
     id: 3,
     title: "In the Outdoors",
-    data: "Crocheting • Playing music • Bouldering • Traveling • Wine/Beer tasting",
-    illustration: "https://illustrations.popsy.co/fuchsia/flower.svg",
+    data: "Crocheting • Playing music • Traveling • Beer tasting",
+    illustration: "https://illustrations.popsy.co/white/flower.svg",
     alt: "Outdoors illustration",
   },
 ];

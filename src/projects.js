@@ -32,19 +32,6 @@ const projects = [
     image: projectrickandmorty,
   },
   {
-    id: 3,
-    name: "Store Checkout",
-    alt: "Store Checkout",
-    description:
-      "E-commerce platform with user-friendly input fields and client-side validation for accurate customer information. Optimized for all devices for seamless shopping experience.",
-    background:
-      "mx-auto h-52 w-80 sm:h-60 sm:w-96 xl:h-80 xl:w-[530px] 2xl:h-[400px] 2xl:w-[685px] md:mx-6 bg-pastel-lilac relative rounded-md",
-    scrollFade: "fade-right",
-    demo: "https://steevanz-store-checkout-cstrecht.vercel.app/",
-    repo: "https://github.com/cstrecht/steevanz-store-checkout",
-    image: projectcheckout,
-  },
-  {
     id: 4,
     name: "This Website",
     alt: "My Website",

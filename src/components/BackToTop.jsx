@@ -4,7 +4,7 @@ const BackToTop = () => {
   return (
     <div className="back-to-top-container" data-aos="fade-up">
       <div className="back-to-top-btn">
-        <a href="#intro" className="text-neutral">
+        <a href="#intro" className="text-neutral dark:text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"

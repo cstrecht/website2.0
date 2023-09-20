@@ -1,8 +1,7 @@
 import projectpokedex from "./assets/projects/projectpokedex.png";
 import projectrickandmorty from "./assets/projects/projectrickandmorty.png";
-import projectmakeup from "./assets/projects/projectmakeup.png";
-import projectcheckout from "./assets/projects/projectcheckout.png";
 import projectwebsite from "./assets/projects/projectwebsite.png";
+import projectzebra from "./assets/projects/projectzebra.png";
 
 const projects = [
   {
@@ -47,13 +46,16 @@ const projects = [
 
   {
     id: 5,
-    name: "The Makeup Store.",
-    alt: "The Makeup Store",
-    description: "Coming soon...",
+    name: "The Adler Typewriter (marketing website)",
+    alt: "The Adler Typewriter",
+    description:
+      "I created this project to showcase the Adler Typewriter, a potential product. Its main goal is to send automated emails to users' inboxes using Resend for API integration and responsive email templates via react.email. Check out the demo!",
     background:
       "mx-auto h-52 w-80 sm:h-60 sm:w-96 xl:h-80 xl:w-[530px] 2xl:h-[400px] 2xl:w-[685px] md:mx-6 bg-pastel-pink relative rounded-md",
     scrollFade: "fade-right",
-    image: projectmakeup,
+    demo: "https://zebra-omega.vercel.app/",
+    repo: "https://github.com/cstrecht/zebra",
+    image: projectzebra,
   },
 ];
 export default projects;

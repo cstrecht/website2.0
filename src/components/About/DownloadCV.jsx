@@ -6,7 +6,7 @@ const DownloadCV = () => {
     <div className="download-btn-container">
       <button className="download-btn">
         <a href={cv_carolina_strecht} rel="noreferrer" target="_blank">
-          Download CV
+          Open my CV (.pdf)
         </a>
       </button>
     </div>

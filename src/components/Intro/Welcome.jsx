@@ -23,7 +23,7 @@ const Welcome = () => {
   return (
     <div className="intro-text">
       <p className="intro-welcome">Hello, I'm Carolina Strecht ✌️</p>
-      <span ref={el}></span>
+      <span className="intro-welcome" ref={el}></span>
       <Socials />
     </div>
   );

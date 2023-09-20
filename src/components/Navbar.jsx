@@ -1,37 +1,91 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import avatarRight from "../assets/avatarRight.svg";
+import useSound from "use-sound";
+import click from "../../src/sounds/click.mp3";
 
-const Navbar = () => {
-  return (
-    <>
-      <nav className="nav-container">
-        <div className="nav-flex">
-          <div className="nav-logo">
-            <img src={avatarRight} className="nav-img" alt="Carolina's Logo" />
-            <span className="nav-username">/cstrecht.</span>
-          </div>
-          <div className="nav-sections">
-            <ul className="nav-list">
-              <li>
-                <a href="#projects" className="nav-link">
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a href="#about" className="nav-link">
-                  About me
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="nav-link">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </>
+export default function Navbar() {
+  const [play] = useSound(click);
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem("darkMode") === "true"
   );
-};
-export default Navbar;
+
+  const toggleDarkMode = () => {
+    const newDarkMode = !darkMode;
+    setDarkMode(newDarkMode);
+    play(click);
+    localStorage.setItem("darkMode", newDarkMode);
+  };
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [darkMode]);
+
+  return (
+    <nav className="nav-container md:fixed">
+      <div className="nav-flex">
+        <div className="nav-logo">
+          <img src={avatarRight} className="nav-img" alt="Carolina's Logo" />
+          <span className="nav-username">/cstrecht.</span>
+        </div>
+        <div className="nav-sections">
+          <ul className="nav-list">
+            <li>
+              <a href="#projects" className="nav-link">
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="#about" className="nav-link">
+                About me
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="nav-link">
+                Say hello
+              </a>
+            </li>
+            <li>
+              <button onClick={toggleDarkMode} className="nav-link">
+                {darkMode ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    class="h-5 w-5 sm:h-6 sm:w-6 xl:h-8 xl:w-8"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    class="h-5 w-5 sm:h-6 sm:w-6 xl:h-8 xl:w-8"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                    />
+                  </svg>
+                )}
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
+}

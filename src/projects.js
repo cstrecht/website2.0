@@ -6,6 +6,7 @@ import projectzebra from "./assets/projects/projectzebra.png";
 const projects = [
   {
     id: 1,
+    prideScore: 4,
     name: "Pokédex App",
     alt: "Pokédex App",
     description:
@@ -19,6 +20,7 @@ const projects = [
   },
   {
     id: 2,
+    prideScore: 2,
     name: "Rick & Morty Wikipedia",
     alt: "Rick & Morty App",
     description:
@@ -32,6 +34,7 @@ const projects = [
   },
   {
     id: 4,
+    prideScore: 5,
     name: "This Website",
     alt: "My Website",
     description:
@@ -46,6 +49,7 @@ const projects = [
 
   {
     id: 5,
+    prideScore: 3,
     name: "The Adler Typewriter (marketing website)",
     alt: "The Adler Typewriter",
     description:

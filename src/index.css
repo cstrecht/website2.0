@@ -17,10 +17,16 @@
   .btn-light {
     @apply m-3 border border-neutral bg-white py-2 px-3 text-sm text-neutral transition-colors duration-500 ease-in-out hover:border-primary hover:text-primary dark:border-eletric-violet dark:bg-dark-blue dark:text-eletric-violet dark:hover:text-white 2xl:px-5 2xl:text-lg;
   }
+  .sort-active {
+    @apply rounded-full border border-primary bg-primary px-2 py-1 text-xs text-white dark:border-eletric-violet dark:bg-eletric-violet sm:px-4 xl:text-base;
+  }
+  .sort-disable {
+    @apply rounded-full border px-2 py-1 text-xs transition-colors duration-500 dark:text-white sm:px-4 xl:text-base;
+  }
 
   /* ===NAVBAR=== */
   .nav-link {
-    @apply m-1 block text-sm  transition-colors duration-500 ease-in-out hover:text-primary dark:text-white sm:my-2 sm:ml-3 sm:mr-4 md:text-base xl:text-lg 2xl:text-2xl;
+    @apply m-1 block text-sm  transition-colors duration-500 ease-in-out hover:text-primary dark:text-white dark:hover:text-eletric-violet sm:my-2 sm:ml-3 sm:mr-4 md:text-base xl:text-lg 2xl:text-2xl;
   }
   .nav-container {
     @apply z-50 w-full bg-white px-2 pt-6 pb-8 transition-colors duration-500 dark:bg-dark-blue sm:absolute sm:px-14 sm:py-4;
@@ -106,6 +112,9 @@
   }
   .project-desc {
     @apply mx-8 my-4 text-xs sm:my-6 sm:text-sm md:my-0 md:mx-0 md:mb-6 md:text-left lg:my-5 2xl:text-xl;
+  }
+  .sort-section {
+    @apply m-6 flex flex-row items-center justify-center gap-2 sm:gap-8;
   }
 
   /* ===ABOUT ME SECTION=== */

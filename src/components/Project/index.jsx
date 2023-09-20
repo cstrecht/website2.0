@@ -1,10 +1,45 @@
 import React from "react";
+import { useState } from "react";
 import projects from "../../projects";
 
 const Project = () => {
+  const [sortedProjects, setSortedProjects] = useState(projects);
+  const [activeButton, setActiveButton] = useState(null);
+
+  const sortProjectsByNewestToOldest = () => {
+    const sorted = [...sortedProjects].sort((a, b) => b.id - a.id);
+    setSortedProjects(sorted);
+    setActiveButton("newestToOldest");
+  };
+
+  const sortProjectsByPride = () => {
+    const sorted = [...sortedProjects].sort(
+      (a, b) => b.prideScore - a.prideScore
+    );
+    setSortedProjects(sorted);
+    setActiveButton("pride");
+  };
+
   return (
     <>
-      {projects.map((project, id) => {
+      <div className="sort-section">
+        <button
+          onClick={sortProjectsByNewestToOldest}
+          className={
+            activeButton === "newestToOldest" ? "sort-active" : "sort-disable"
+          }
+        >
+          sort by newest to oldest
+        </button>
+        <button
+          onClick={sortProjectsByPride}
+          className={activeButton === "pride" ? "sort-active" : "sort-disable"}
+        >
+          sort by carolina's pride level 🚀
+        </button>
+      </div>
+
+      {sortedProjects.map((project, id) => {
         return (
           <div
             className="project-container"

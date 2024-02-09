@@ -11,6 +11,9 @@
   .section-title {
     @apply mt-4 mb-12 text-center text-4xl transition-colors duration-500 dark:text-white sm:mb-24 2xl:mt-10 2xl:mb-24 2xl:text-[60px];
   }
+  .section-subtitle {
+    @apply mt-4 mb-12 text-center text-xl transition-colors duration-500 dark:text-white sm:mb-24 2xl:mt-10 2xl:mb-24 2xl:text-[30px];
+  }
   .btn-dark {
     @apply mr-3 bg-neutral py-2 px-3 text-sm text-white transition-colors duration-500 ease-in-out hover:bg-primary dark:bg-eletric-violet dark:hover:bg-primary 2xl:px-5 2xl:text-lg;
   }
@@ -108,10 +111,10 @@
     @apply text-center transition-colors duration-500 dark:text-white md:w-80 lg:mx-6 lg:w-[400px];
   }
   .project-name {
-    @apply mt-6 text-2xl transition-colors duration-500 dark:text-white md:mt-0 md:mb-6 md:text-left 2xl:text-4xl;
+    @apply mt-6 text-xl transition-colors duration-500 dark:text-white md:mt-0 md:mb-6 md:text-left 2xl:text-3xl;
   }
   .project-desc {
-    @apply mx-8 my-4 text-xs sm:my-6 sm:text-sm md:my-0 md:mx-0 md:mb-6 md:text-left lg:my-5 2xl:text-xl;
+    @apply mx-8 my-4 text-xs sm:my-6 sm:text-base md:my-0 md:mx-0 md:mb-6 md:text-left lg:my-5 2xl:text-lg;
   }
   .sort-section {
     @apply m-6 flex flex-row items-center justify-center gap-2 sm:gap-8;

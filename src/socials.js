@@ -1,6 +1,6 @@
 import github from "./assets/github.svg";
 import linkedin from "./assets/linkedin.svg";
-import twitter from "./assets/twitter.svg";
+import x from "./assets/x.svg";
 
 const socials = [
   {
@@ -24,7 +24,7 @@ const socials = [
     name: "Twitter",
     href: "https://twitter.com/cstrechtt",
     alt: "Twitter",
-    icon: twitter,
+    icon: x,
     tooltip: "twitter-tooltip",
   },
 ];
